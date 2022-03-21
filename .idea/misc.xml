@@ -3,11 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Pats_community/app/src/main/res/layout/activity_main.xml" value="0.136" />
+        <entry key="..\:/Pats_community/app/src/main/res/drawable/but_style1.xml" value="0.26979166666666665" />
+        <entry key="..\:/Pats_community/app/src/main/res/drawable/dotselect.xml" value="0.26979166666666665" />
+        <entry key="..\:/Pats_community/app/src/main/res/drawable/fullscreen.xml" value="0.18055555555555555" />
+        <entry key="..\:/Pats_community/app/src/main/res/drawable/ic_launcher_background.xml" value="0.26979166666666665" />
+        <entry key="..\:/Pats_community/app/src/main/res/drawable/point_deep.xml" value="0.26979166666666665" />
+        <entry key="..\:/Pats_community/app/src/main/res/drawable/rectangle_2.xml" value="0.26979166666666665" />
+        <entry key="..\:/Pats_community/app/src/main/res/layout/activity_guide.xml" value="0.264" />
+        <entry key="..\:/Pats_community/app/src/main/res/layout/activity_guide2.xml" value="0.25364583333333335" />
+        <entry key="..\:/Pats_community/app/src/main/res/layout/activity_guide_actvity.xml" value="0.25364583333333335" />
+        <entry key="..\:/Pats_community/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Pats_community/app/src/main/res/layout/guide_fragment1.xml" value="0.25364583333333335" />
+        <entry key="..\:/Pats_community/app/src/main/res/layout/test.xml" value="0.264" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

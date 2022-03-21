@@ -1,11 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/canvas"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/tan"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
 
-  </LinearLayout>
+    <!-- 宠物社区 -->
+    <View
+        android:id="@+id/vector_1"
+        android:layout_width="81dp"
+        android:layout_height="92.86dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="0.29dp"
+        android:background="@drawable/rectangle_2" />
+
+    <TextView
+        android:id="@+id/some_id"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="227dp"
+        android:lineSpacingExtra="-18sp"
+        android:text="@string/some_id"
+        android:textAppearance="@style/some_id" />
+
+    <TextView
+        android:layout_marginTop="21sp"
+        android:id="@+id/some_id2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/some_id"
+        android:layout_centerHorizontal="true"
+        android:lineSpacingExtra="-18sp"
+        android:text="方便你，了解它"
+        android:textAppearance="@style/some_id"
+        android:textSize="15dp" />
+
+
+    <View
+        android:id="@+id/rectangle_2"
+        android:layout_width="match_parent"
+        android:layout_height="484dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="313dp"
+        android:background="@drawable/rectangle_2"
+        android:elevation="8dp" />
+
+
+</RelativeLayout>
+
