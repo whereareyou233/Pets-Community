@@ -39,7 +39,7 @@ public class GuideActivity extends AppCompatActivity {
     private List<ImageView> guids;
 
     //向导界面的图片
-    private int[] mPics = new int[]{R.mipmap.guide3, R.drawable.guide2, R.mipmap.guide1};
+    private int[] mPics = new int[]{R.mipmap.guide3, R.mipmap.guide2, R.mipmap.guide1};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -167,9 +167,7 @@ public class GuideActivity extends AppCompatActivity {
                             finish();
                         }
                     });
-
                 } else if (position == guids.size() - 2) {
-
                     t1.setVisibility(View.GONE);
                     t2.setVisibility(View.VISIBLE);
                 }

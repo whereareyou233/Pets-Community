@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><!--左下圆角 By Moses-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" >
+
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <solid android:color="#C4A579" />
+            <!--            <padding-->
+            <!--                android:right="10dp"-->
+            <!--                android:left="10dp"/>-->
+            <corners android:radius="40dp" />
+        </shape>
+    </item>
+
+    <item android:state_focused="false" >
+
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="#00000000" />
+            <!--            <padding-->
+            <!--                android:right="10dp"-->
+            <!--                android:left="10dp"/>-->
+            <corners android:radius="40dp" />
+
+        </shape>
+    </item>
+
+</selector>
+

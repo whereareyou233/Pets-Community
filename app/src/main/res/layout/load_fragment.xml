@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/choose_load"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+
+        android:background="@drawable/textview_shape"
+        android:hint="     请输入手机号"
+
+        android:inputType="textPassword" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/textview_shape"
+        android:hint="     请输入密码"
+        android:inputType="textPassword" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical" >
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/load_function"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:src="@drawable/arror"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

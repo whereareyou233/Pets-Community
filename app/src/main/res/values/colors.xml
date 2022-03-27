@@ -151,4 +151,5 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="gray">#505050</color><!--灰色 -->
+    <color name="yel">#C4A079</color>
 </resources>

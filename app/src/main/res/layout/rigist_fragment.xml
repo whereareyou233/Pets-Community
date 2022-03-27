@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+
+        android:background="@drawable/textview_shape"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/rigist_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+
+            android:background="@drawable/but_style1_shape"
+            android:hint="     请输入手机号"
+            android:inputType="textPassword" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:background="@drawable/but_style1_shape"
+            android:text="发送验证码" />
+
+    </RelativeLayout>
+
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+
+        android:background="@drawable/textview_shape"
+        android:hint="     请输入密码"
+        android:inputType="textPassword" />
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+
+        android:background="@drawable/textview_shape"
+        android:hint="     再次确认密码"
+        android:inputType="textPassword" />
+
+    <?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical" >
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/rigist_function"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+
+            android:src="@drawable/arror"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
