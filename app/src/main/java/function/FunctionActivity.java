@@ -31,6 +31,8 @@ public class FunctionActivity extends AppCompatActivity {
         bottomNavigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
         viewPager = findViewById(R.id.vp);
+
+
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -53,13 +55,15 @@ public class FunctionActivity extends AppCompatActivity {
 
             }
         });
+
         viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(viewPagerAdapter);
         List<Fragment> list = new ArrayList<>();
-        list.add(TestFragment.newInstance("首页"));
-        list.add(TestFragment.newInstance("数据"));
-        list.add(TestFragment.newInstance("百科"));
-        list.add(TestFragment.newInstance("个人"));
+        list.add(new Shouye_Fragment());
+        list.add(new ShujuFragment());
+        list.add(new KnowledgeFragment());
+        list.add(new PrivateFragment());
+
         viewPagerAdapter.setList(list);
 
 

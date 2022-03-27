@@ -31,8 +31,6 @@
         android:layout_height="match_parent"
         android:gravity="bottom|center_horizontal"
         android:orientation="vertical" >
-
-
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/load_function"
             android:layout_width="60sp"
@@ -40,7 +38,4 @@
             android:src="@drawable/arror"
             android:textSize="30sp" />
     </LinearLayout>
-
-
-
 </LinearLayout>

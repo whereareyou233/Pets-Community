@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?><!-- drawable/rectangle_2.xml -->
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- 圆角 -->
-    <corners
-        android:topLeftRadius="20dp"
-        android:topRightRadius="20dp" /><!-- 设置圆角半径 -->
-    <solid android:color="@color/white" />
+
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        >
+        <!-- 圆角 -->
+        <corners
+            android:topLeftRadius="20dp"
+            android:topRightRadius="20dp" /><!-- 设置圆角半径 -->
+        <solid android:color="@color/white" />
 
 
-</shape>
+    </shape>

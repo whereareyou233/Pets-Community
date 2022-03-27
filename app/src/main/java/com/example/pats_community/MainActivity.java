@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
+import android.widget.ToggleButton;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,10 +18,10 @@ import androidx.viewpager.widget.ViewPager;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity implements CompoundButton.OnCheckedChangeListener {
 
-    private Button b1;
-    private Button b2;
+    private ToggleButton b1;
+    private ToggleButton b2;
     Load_Fragment load_fragment = new Load_Fragment();
     Rigist_Fragment rigist_fragment = new Rigist_Fragment();
     ViewPager viewPager;
@@ -39,23 +41,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         b1 = findViewById(R.id.load);
         b2 = findViewById(R.id.regist);
-        b1.setOnClickListener(this);
-        b2.setOnClickListener(this);
+        b1.setOnCheckedChangeListener(this);
+        b2.setOnCheckedChangeListener(this);
     }
 
-    @Override
-    public void onClick(View v) {
 
-        switch (v.getId()) {
+
+
+    @Override
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+        switch (buttonView.getId()) {
             case R.id.load:
+
                 viewPager.setCurrentItem( 0 );
                 break;
             case R.id.regist:
+
                 viewPager.setCurrentItem( 1 );
                 //设置选中状态
                 break;
         }
+
     }
+
     private static class myAdapter extends FragmentPagerAdapter {
 
         private  final List<Fragment>fragments;
