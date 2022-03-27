@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_shouye"
+        android:title="首页" />
+    <item
+        android:id="@+id/navigation_shuju"
+        android:title="数据" />
+    <item
+        android:id="@+id/navigation_baike"
+        android:title="百科" />
+    <item
+        android:id="@+id/navigation_geren"
+        android:title="个人" />
+</menu>

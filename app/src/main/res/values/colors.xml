@@ -57,7 +57,7 @@
     <color name="violet">#ee82ee</color><!--紫罗兰色 -->
     <color name="darksalmon">#e9967a</color><!--暗肉色 -->
     <color name="lavender">#e6e6fa</color><!--淡紫色 -->
-    <color name="lightcyan">#e0ffff</color><!--亮青色 -->
+
     <color name="burlywood">#deb887</color><!--实木色 -->
     <color name="plum">#dda0dd</color><!--洋李色 -->
     <color name="gainsboro">#dcdcdc</color><!--淡灰色 -->
@@ -152,4 +152,6 @@
     <color name="colorAccent">#FF4081</color>
     <color name="gray">#505050</color><!--灰色 -->
     <color name="yel">#C4A079</color>
+    <color name="tab_checked">#997C54</color>
+    <color name="tab_unchecked">#362916</color>
 </resources>

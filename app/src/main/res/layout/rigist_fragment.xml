@@ -57,8 +57,6 @@
         android:hint="     再次确认密码"
         android:inputType="textPassword" />
 
-    <?xml version="1.0" encoding="utf-8"?>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

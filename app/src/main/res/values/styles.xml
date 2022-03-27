@@ -1,5 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
@@ -7,6 +7,17 @@
         <item name="colorAccent">@color/colorAccent</item>
 
 
+    </style>
+    <style name="bottom_tab_title_active">
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginBottom">50dp</item>
+        <item name="android:color">@color/tab_checked</item>
+    </style>
+    <!--没有选中的样式，导航默认的字体大小就是12sp-->
+    <style name="bottom_tab_title_inactive">
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginBottom">50dp</item>
+        <item name="android:color">@color/tab_unchecked</item>
     </style>
 
 </resources>

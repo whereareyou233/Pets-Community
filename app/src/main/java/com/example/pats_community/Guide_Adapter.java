@@ -11,7 +11,7 @@ import androidx.viewpager.widget.PagerAdapter;
 import java.util.List;
 /**
  *
- * @创建者 mingyan.su
+ * @创建者 zhang
  * @创建时间 2018/9/4 15:00
  * @类描述 ${TODO}viewpager的适配器
  */
@@ -39,7 +39,7 @@ public class Guide_Adapter extends PagerAdapter {
 
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
-        // container viewpaper
+
         //获取View
         View child = mGuids.get(position);
         // 添加View

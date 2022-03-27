@@ -34,7 +34,6 @@
 
 
         <de.hdodenhof.circleimageview.CircleImageView
-
             android:id="@+id/load_function"
             android:layout_width="60sp"
             android:layout_height="60sp"
