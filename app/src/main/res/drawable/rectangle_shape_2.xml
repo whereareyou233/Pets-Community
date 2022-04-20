@@ -4,8 +4,8 @@
     >
     <!-- 圆角 -->
     <corners
-      android:radius="20dp" /><!-- 设置圆角半径 -->
-    <solid android:color="@color/tab_checked" />
+        android:radius="20dp" /><!-- 设置圆角半径 -->
+    <solid android:color="@color/yel" />
 
 
 </shape>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="30px"
+    android:layout_marginTop="10dp"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/picture"
+            />
+
+
+            <TextView
+                android:layout_toRightOf="@id/picture"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:id="@+id/contentX"/>
+            <TextView
+                android:id="@+id/contentx"
+                android:textSize="13dp"
+                android:layout_toRightOf="@id/picture"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:layout_toRightOf="@id/picture"
+                    android:layout_marginTop="78dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageId"/>
+                <TextView
+                    android:textSize="12dp"
+                    android:layout_toRightOf="@id/picture"
+                    android:layout_marginTop="76dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text"/>
+                <ImageView
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="73dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/more_24"/>
+
+        </RelativeLayout>
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>
