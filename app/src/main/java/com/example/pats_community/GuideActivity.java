@@ -44,7 +44,6 @@ public class GuideActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-/*
         SharedPreferences setting = getSharedPreferences("com.example.welcome",
                 0);
         Boolean user_first = setting.getBoolean("FIRST", true);
@@ -57,7 +56,7 @@ public class GuideActivity extends AppCompatActivity {
             startActivity(mIntent);
             finish();
             finish();
-        }*/
+        }
 
         setContentView(R.layout.activity_guide);
 
