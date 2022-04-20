@@ -31,8 +31,7 @@ public class FunctionActivity extends AppCompatActivity {
         bottomNavigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
         viewPager = findViewById(R.id.vp);
-
-
+        viewPager.setOffscreenPageLimit(3);
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -49,10 +48,8 @@ public class FunctionActivity extends AppCompatActivity {
                 menuItem = bottomNavigationView.getMenu().getItem(position);
                 menuItem.setChecked(true);
             }
-
             @Override
             public void onPageScrollStateChanged(int state) {
-
             }
         });
 

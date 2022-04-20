@@ -6,7 +6,7 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
-    <color name="white">#ffffff</color><!--白色 -->
+    <color name="white">#FFFFFFFF</color><!--白色 -->
     <color name="ivory">#fffff0</color><!--象牙色 -->
     <color name="lightyellow">#ffffe0</color><!--亮黄色 -->
     <color name="yellow">#ffff00</color><!--黄色 -->
@@ -152,6 +152,7 @@
     <color name="colorAccent">#FF4081</color>
     <color name="gray">#505050</color><!--灰色 -->
     <color name="yel">#C4A079</color>
-    <color name="tab_checked">#997C54</color>
+    <color name="tab_checked">#D5ECD1A1</color>
+    <color name="ta">#FFF7E4</color>
     <color name="tab_unchecked">#362916</color>
 </resources>

@@ -22,10 +22,12 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
 
     private ToggleButton b1;
     private ToggleButton b2;
+
     Load_Fragment load_fragment = new Load_Fragment();
     Rigist_Fragment rigist_fragment = new Rigist_Fragment();
     ViewPager viewPager;
-    List<Fragment> fragments=new ArrayList<>(  );;
+
+    List<Fragment> fragments=new ArrayList<>();;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,14 +47,10 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         b2.setOnCheckedChangeListener(this);
     }
 
-
-
-
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
         switch (buttonView.getId()) {
             case R.id.load:
-
                 viewPager.setCurrentItem( 0 );
                 break;
             case R.id.regist:
@@ -61,18 +59,15 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
                 //设置选中状态
                 break;
         }
-
     }
 
     private static class myAdapter extends FragmentPagerAdapter {
 
         private  final List<Fragment>fragments;
         public myAdapter(FragmentManager fm, List<Fragment>fragments) {
-
             super( fm );
             this.fragments=fragments;
         }
-
         @NonNull
         public Fragment getItem(int position) {
             return fragments.get( position );

@@ -44,7 +44,7 @@ public class GuideActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-/*
+
         SharedPreferences setting = getSharedPreferences("com.example.welcome",
                 0);
         Boolean user_first = setting.getBoolean("FIRST", true);
@@ -57,7 +57,7 @@ public class GuideActivity extends AppCompatActivity {
             startActivity(mIntent);
             finish();
             finish();
-        }*/
+        }
 
         setContentView(R.layout.activity_guide);
 
@@ -68,6 +68,7 @@ public class GuideActivity extends AppCompatActivity {
 
         TextView t2 = findViewById(R.id.pho2);
         t2.setVisibility(View.GONE);
+
         SpannableString ss = new SpannableString("宠物社区\n在这里你可以分享和宠物的日常");
         ss.setSpan(new AbsoluteSizeSpan(40, true), 0, 4, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 

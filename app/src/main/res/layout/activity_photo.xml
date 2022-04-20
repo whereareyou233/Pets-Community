@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/photo_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab_checked"
+    android:orientation="vertical"
+    tools:context="function.PhotoActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Toorbar_photo"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="拍照识别"
+            android:textColor="@color/black"
+            android:textSize="26dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/botton_shape_1"
+            android:paddingTop="40dp"
+            android:paddingRight="70dp"
+            android:text="分类识别"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/botton_shape_1"
+            android:paddingTop="40dp"
+            android:paddingRight="70dp"
+            android:text="识别历史"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+    <!--该组件用来展示摄像头捕获到的内容-->
+    <TextureView
+        android:layout_margin="5dp"
+        android:id="@+id/textureview"
+        android:layout_width="match_parent"
+
+        android:layout_height="500dp"
+         />
+
+    <Button
+        android:onClick="capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/botton_shape_1"
+        android:text="拍照" />
+
+</LinearLayout>

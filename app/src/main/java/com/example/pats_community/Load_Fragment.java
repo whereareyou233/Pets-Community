@@ -14,10 +14,12 @@ import de.hdodenhof.circleimageview.CircleImageView;
 import function.FunctionActivity;
 
 public class Load_Fragment extends Fragment {
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.load_fragment, container, false);
+
         CircleImageView circleImageView = view.findViewById(R.id.load_function);
         circleImageView.setOnClickListener(new View.OnClickListener() {
             @Override

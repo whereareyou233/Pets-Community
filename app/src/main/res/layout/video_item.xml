@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/video_cardview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardPreventCornerOverlap="false">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/video_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--标题区域,最大行数为2-->
+        <TextView
+            android:id="@+id/vide_text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/video_image"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:maxLines="2"
+            android:text="标题"
+            android:textColor="#333"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vide_text_title"
+            android:orientation="horizontal">
+            <!--头像图片，这个CricleImageView是另写的一个类继承自ImageView，用来实现圆形的图片效果和缩放效果的-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/home_item_head"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:scaleType="centerCrop" />
+            <!--昵称区域-->
+            <TextView
+                android:id="@+id/home_video_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="阿呆"
+                android:textColor="#333333"
+                android:textSize="10sp" />
+            <!--点赞区域-->
+            <LinearLayout
+
+                android:id="@+id/home_item_good"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/heart" />
+
+                <TextView
+                    android:id="@+id/video_num"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:text="123"
+                    android:textColor="#333333"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
