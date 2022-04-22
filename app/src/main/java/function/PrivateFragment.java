@@ -1,5 +1,6 @@
 package function;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,46 +8,47 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.ListView;
 
+import com.example.pats_community.MainActivity;
 import com.example.pats_community.R;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class PrivateFragment extends Fragment {
 
-
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public PrivateFragment() {
-        // Required empty public constructor
-    }
-
-    public static PrivateFragment newInstance(String param1, String param2) {
-        PrivateFragment fragment = new PrivateFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
-
+    private List<Private> privateList = new ArrayList<>();
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_private, container, false);
+        initPrivate();
+        View view = inflater.inflate(R.layout.fragment_private, container, false);
+        PrivateAdapter adapter = new PrivateAdapter(getContext(),R.layout.private_item,privateList);
+        ListView listView = (ListView) view.findViewById(R.id.prv_rlv);
+        listView.setAdapter(adapter);
+        ImageView imageView = (ImageView) view.findViewById(R.id.private_setting);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(),SettingActivity.class);
+                getActivity().startActivity(intent);
+            }
+        });
+        return view;
+    }
+
+    private void initPrivate() {
+            Private private1 = new Private(R.mipmap.private_publish);
+            privateList.add(private1);
+            Private private2 = new Private(R.mipmap.private_collection);
+            privateList.add(private2);
+            Private private3 = new Private(R.mipmap.private_service);
+            privateList.add(private3);
+            Private private4 = new Private(R.mipmap.private_goods);
+            privateList.add(private4);
     }
 }
