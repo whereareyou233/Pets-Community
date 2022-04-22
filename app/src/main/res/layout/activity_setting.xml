@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/tab_checked"
+    tools:context="function.SettingActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/setting_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="设置"
+            android:textColor="#252525"
+            android:textSize="25dp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/rlv_setting"
+        android:divider="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+
+</LinearLayout>
