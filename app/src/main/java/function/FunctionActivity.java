@@ -1,7 +1,11 @@
 package function;
 
+import android.database.sqlite.SQLiteDatabase;
+import android.nfc.Tag;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,12 +13,17 @@ import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.pats_community.R;
+import com.example.pats_community.User;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import org.litepal.crud.DataSupport;
+import org.litepal.tablemanager.Connector;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import function.util.KnowledgeFragment;
+import util.PhotoUtils;
 
 public class FunctionActivity extends AppCompatActivity {
 
@@ -27,9 +36,29 @@ public class FunctionActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_function);
+
         bottomNavigationView = findViewById(R.id.bottomNavigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-
+ //       DataSupport.deleteAll("User","");
+//        User user = new User();
+//        user.setName("爱宠");
+//        user.setPortrait((new PhotoUtils()).file2byte(this ,"private_headshot.jpg"));
+//        user.setImageId(R.mipmap.private_headshot);
+//        if (user.save()) {
+//            Toast.makeText(this, "保存成功", Toast.LENGTH_SHORT).show();
+//          //  this.finish();
+//        } else {
+//            Toast.makeText(this, "保存失败", Toast.LENGTH_SHORT).show();
+//        }
+//        user.setName("test");
+//        user.setPortrait((new PhotoUtils()).file2byte(this ,"default_portrait.jpg"));
+//        user.setImageId(R.mipmap.default_portrait);
+//        if (user.save()) {
+//            Toast.makeText(this, "保存成功", Toast.LENGTH_SHORT).show();
+//          //  this.finish();
+//        } else {
+//            Toast.makeText(this, "保存失败", Toast.LENGTH_SHORT).show();
+//        }
         viewPager = findViewById(R.id.vp);
         viewPager.setOffscreenPageLimit(3);
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
@@ -82,10 +111,33 @@ public class FunctionActivity extends AppCompatActivity {
                     viewPager.setCurrentItem(2);
                     return true;
                 case R.id.navigation_geren:
+                   // initInfo();
                     viewPager.setCurrentItem(3);
+
                     return true;
             }
             return false;
         }
     };
+
+   // private void initInfo() {
+
+
+
+    //    User user = new User();
+    //    user.setId("柯基");
+
+//        user.setName("123");
+//        user.setPortrait((new PhotoUtils()).file2byte(this ,"private_headshot.jpg"));
+       // user.setImageId(R.mipmap.private_headshot);
+//        if (user.save()) {
+//            Toast.makeText(this, "保存成功", Toast.LENGTH_SHORT).show();
+//          //  this.finish();
+//        } else {
+//            Toast.makeText(this, "保存失败", Toast.LENGTH_SHORT).show();
+//        }
+
+      //  DataSupport.deleteAll("User","");
+
+  //  }
 }
