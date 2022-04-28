@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,6 +8,7 @@
     tools:context="function.ShujuFragment">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/card_pat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
@@ -16,11 +18,14 @@
             android:layout_width="match_parent"
             android:layout_height="220dp"
             android:scaleType="centerCrop"
-            android:src="@mipmap/pat_add_message" />
+            android:src="@mipmap/pat_add_message"
+
+            />
 
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/c1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
@@ -48,13 +53,13 @@
                     android:textSize="30dp" />
 
                 <Button
-                    android:paddingLeft="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
                     android:layout_below="@id/t1"
                     android:layout_marginLeft="20dp"
                     android:background="@drawable/botton_shape_1"
                     android:drawableRight="@drawable/arror_small"
+                    android:paddingLeft="10dp"
                     android:text="查看宠物健康数据      "
                     android:textColor="@color/white"
                     android:textSize="17dp" />
@@ -70,6 +75,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/c2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
@@ -103,9 +109,9 @@
                     android:layout_marginLeft="20dp"
                     android:background="@drawable/botton_shape_1"
                     android:drawableRight="@drawable/arror_small"
+                    android:paddingLeft="10dp"
                     android:text="搜索周围商家及医院  "
                     android:textColor="@color/white"
-                    android:paddingLeft="10dp"
                     android:textSize="17dp" />
 
             </LinearLayout>
@@ -114,11 +120,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="110dp"
                 android:layout_toRightOf="@+id/t2"
-                android:src="@mipmap/img_1" />
+                android:src="@mipmap/img_3" />
         </RelativeLayout>
+
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/c3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
@@ -146,13 +154,13 @@
                     android:textSize="30dp" />
 
                 <Button
-                    android:paddingLeft="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
                     android:layout_below="@id/t1"
                     android:layout_marginLeft="20dp"
                     android:background="@drawable/botton_shape_1"
                     android:drawableRight="@drawable/arror_small"
+                    android:paddingLeft="10dp"
                     android:text="关于宠物的备忘录      "
                     android:textColor="@color/white"
                     android:textSize="17dp" />

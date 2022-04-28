@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     tools:context="function.VideoFragment">
 
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycle_view"
         android:layout_width="match_parent"

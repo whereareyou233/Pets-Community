@@ -32,7 +32,6 @@ public class VideoFragment extends Fragment {
             new video("抓住今日份可爱6", "金毛查理的日常", R.drawable.jinmao, "666", R.mipmap.jinmaohead)
     };
     private View view;
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

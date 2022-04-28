@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="5dp"
+    android:layout_height="220dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:background="@color/tab_checked"
+        android:layout_height="wrap_content">
+       <ImageView
+           android:layout_alignParentBottom="true"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:scaleType="centerCrop"
+           android:src="@mipmap/jindu"/>
+
+
+        <ImageView
+            android:id="@+id/service_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10" />
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_10"
+            android:id="@+id/service_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/service_image"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/service_moment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/service_image"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textSize="16dp"
+
+            />
+
+        <TextView
+            android:id="@+id/fen"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/service_image"
+            android:layout_toRightOf="@+id/service_moment"
+            android:text="|" />
+
+        <TextView
+            android:id="@+id/service_aim"
+            android:layout_width="wrap_content"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/service_image"
+            android:layout_toRightOf="@+id/fen"
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

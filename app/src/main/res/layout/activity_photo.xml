@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/tab_checked"
     android:orientation="vertical"
-    tools:context="function.PhotoActivity">
+    tools:context="function.util.PhotoActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/Toorbar_photo"
