@@ -1,13 +1,100 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="function.PrivateFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <ImageView
+        android:id="@+id/private_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/private_setting" />
 
-</FrameLayout>
+    <ImageView
+        android:id="@+id/private_headshot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/private_setting"
+        android:layout_marginLeft="20dp"
+        android:src="@mipmap/private_headshot" />
+
+    <TextView
+        android:id="@+id/private_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/private_setting"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/private_headshot"
+        android:text="爱宠"
+        android:textColor="#252525"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/private_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/private_name"
+        android:layout_toRightOf="@id/private_headshot"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:src="@mipmap/private_sex"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/private_name"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@id/private_sex"
+        android:text="广西 | 43岁 | 柯基"
+        android:textColor="#252525"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/private_sex"
+        android:src="@mipmap/private_edit"
+        android:layout_toRightOf="@id/private_headshot"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@id/private_headshot"
+        android:layout_marginTop="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/private_information_owner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/private_headshot"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/private_information_owner" />
+
+    <ImageView
+        android:id="@+id/private_information_pats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/private_information_owner"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/private_information_pets" />
+
+    <ListView
+        android:id="@+id/prv_rlv"
+        android:divider="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/private_information_pats"
+        />
+
+
+
+</RelativeLayout>

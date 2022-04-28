@@ -8,7 +8,7 @@
     android:orientation="horizontal"
     tools:context=".MainActivity">
     <!-- 宠物社区 -->
-
+c
     <ImageView
         android:id="@+id/vector_1"
         android:layout_width="81dp"
