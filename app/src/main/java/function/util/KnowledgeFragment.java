@@ -51,19 +51,19 @@ public class KnowledgeFragment extends Fragment {
 
 
     private void initKnowledge() {
-
-        Knowledge knowledge1 = new Knowledge(R.mipmap.knowledge_1, "猫咪耳朵突然发臭别慌！是耳螨！",
-                "耳螨是最常见的猫咪疾病，虽没有生命危险，但其传染性往往让铲屎官十分头疼...", R.mipmap.v1, "科普社区");
-        knowledgesList.add(knowledge1);
-        Knowledge knowledge2 = new Knowledge(R.mipmap.knowledge_2, "训练狗狗小Tips",
-                "为什么别人家的狗狗那么听话，并且拥有各种各样的本领？！如何训练自家的崽崽成...", R.mipmap.v1, "科普社区");
-        knowledgesList.add(knowledge2);
-        Knowledge knowledge3 = new Knowledge(R.mipmap.knowledge_3, "兔子的睡姿与性格有哪些关系？",
-                "有些兔子似乎从不闭上眼睛睡觉，最多是把四肢藏在肚子下，眯着眼睛打盹，也不会...", R.mipmap.v2, "Lili的小知识");
-        knowledgesList.add(knowledge3);
-        Knowledge knowledge4 = new Knowledge(R.mipmap.knowledge_4, "新手养鸟 | 16种鹦鹉语言解析",
-                "当面低头、整理羽毛、贴贴、展翅拍打、眼睛呈三角状、瞳孔缩小、敲击物品、抬高...", R.mipmap.v2, "沃克和牡丹鹦鹉");
-        knowledgesList.add(knowledge4);
-
+        for (int i = 0; i < 5; i++) {
+            Knowledge knowledge1 = new Knowledge(R.mipmap.knowledge_1, "猫咪耳朵突然发臭别慌！是耳螨！",
+                    "耳螨是最常见的猫咪疾病，虽没有生命危险，但其传染性往往让铲屎官十分头疼...", R.mipmap.v1, "科普社区");
+            knowledgesList.add(knowledge1);
+            Knowledge knowledge2 = new Knowledge(R.mipmap.knowledge_2, "训练狗狗小Tips",
+                    "为什么别人家的狗狗那么听话，并且拥有各种各样的本领？！如何训练自家的崽崽成...", R.mipmap.v1, "科普社区");
+            knowledgesList.add(knowledge2);
+            Knowledge knowledge3 = new Knowledge(R.mipmap.knowledge_3, "兔子的睡姿与性格有哪些关系？",
+                    "有些兔子似乎从不闭上眼睛睡觉，最多是把四肢藏在肚子下，眯着眼睛打盹，也不会...", R.mipmap.v2, "Lili的小知识");
+            knowledgesList.add(knowledge3);
+            Knowledge knowledge4 = new Knowledge(R.mipmap.knowledge_4, "新手养鸟 | 16种鹦鹉语言解析",
+                    "当面低头、整理羽毛、贴贴、展翅拍打、眼睛呈三角状、瞳孔缩小、敲击物品、抬高...", R.mipmap.v2, "沃克和牡丹鹦鹉");
+            knowledgesList.add(knowledge4);
+        }
     }
 }

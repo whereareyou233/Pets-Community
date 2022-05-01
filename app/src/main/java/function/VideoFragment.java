@@ -14,7 +14,6 @@ import com.example.pats_community.R;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 
 public class VideoFragment extends Fragment {
@@ -24,14 +23,15 @@ public class VideoFragment extends Fragment {
 
     private video[] videos = {
 
-            new video("抓住今日份可爱1,今天去了最喜欢的楼下", "金毛查理的日常", R.drawable.jinmao, "4546", R.mipmap.jinmaohead),
-            new video("抓住今日份可爱2", "金毛查理的日常", R.drawable.jinmao, "4546", R.mipmap.jinmaohead),
-            new video("抓住今日份可爱3", "金毛查理的日常", R.drawable.jinmao, "666", R.mipmap.jinmaohead),
-            new video("抓住今日份可爱4,今天去了最喜欢的楼下", "金毛查理的日常", R.drawable.jinmao, "4546", R.mipmap.jinmaohead),
-            new video("抓住今日份可爱5", "金毛查理的日常", R.drawable.jinmao, "666", R.mipmap.jinmaohead),
-            new video("抓住今日份可爱6", "金毛查理的日常", R.drawable.jinmao, "666", R.mipmap.jinmaohead)
+            new video("大金毛的游玩日记|今天去了最喜欢的楼下小区！", "金毛查理的日常", R.mipmap.jinmao, "4546", R.mipmap.jinmaohead),
+            new video("想给入坑蜜袋鼯的新手一些建议 避坑 最近也有一些朋友私...", "丹丹的蜜袋鼯", R.mipmap.video_item_1, "2231", R.mipmap.video_item_1_head),
+            new video("抓住今日份可爱！", "精灵妞妞、", R.mipmap.video_item_2, "666", R.mipmap.video_item_2_head),
+            new video("软软的兔兔 抱在怀里实在是太治愈了#荷兰垂耳兔", "揪小兔耳朵", R.mipmap.video_item_4, "242", R.mipmap.video_item_4_head),
+            new video("抓住今日份可爱5", "金毛查理的日常", R.mipmap.video_item_5, "666", R.mipmap.jinmaohead),
+            new video("抓住今日份可爱6", "金毛查理的日常", R.mipmap.video_item_6, "666", R.mipmap.video_item_4_head)
     };
     private View view;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -47,13 +47,12 @@ public class VideoFragment extends Fragment {
         recyclerView.setAdapter(adapter);
         return view;
     }
-
     private void initVideo() {
         videoList.clear();
-        for (int i = 0; i < 50; i++) {
-            Random random = new Random();
-            int index = random.nextInt(videos.length);
-            videoList.add(videos[index]);
+        for (int w = 0; w < 10; w++) {
+            for (int i = 0; i < videos.length; i++) {
+                videoList.add(videos[i]);
+            }
         }
     }
 

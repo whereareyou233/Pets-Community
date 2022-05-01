@@ -1,7 +1,6 @@
 package function;
 
 import static android.provider.MediaStore.EXTRA_OUTPUT;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -35,7 +34,7 @@ import com.example.pats_community.LoginUser;
 import com.example.pats_community.R;
 import com.example.pats_community.User;
 import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
+
 
 import org.litepal.crud.DataSupport;
 
@@ -117,6 +116,7 @@ public class Private_editActivity extends AppCompatActivity implements View.OnCl
                 finish();
             }
         });
+
 
         initInfo();
     }
@@ -226,6 +226,7 @@ public class Private_editActivity extends AppCompatActivity implements View.OnCl
                     }
                 }
                 break;
+
             //从相册中选择图片
             case FROM_ALBUMS:
                 if(resultCode == RESULT_OK){
@@ -255,11 +256,13 @@ public class Private_editActivity extends AppCompatActivity implements View.OnCl
                 break;
         }
     }
+
     //从数据库中初始化数据并展示
     private void initInfo(){
+
         User user = DataSupport.findFirst(User.class);
         LoginUser loginUser = LoginUser.getInstance();
-    //    ig_id.getContentEdt().setText(String.valueOf(loginUser.getId()));  //ID是int，转string
+    //  ig_id.getContentEdt().setText(String.valueOf(loginUser.getId()));  //ID是int，转string
         ig_name.getContentEdt().setText(user.getName());
         ri_portrati.setImageBitmap(photoUtils.byte2bitmap(user.getPortrait()));
         ig_gender.getContentEdt().setText(loginUser.getGender());
@@ -279,7 +282,7 @@ public class Private_editActivity extends AppCompatActivity implements View.OnCl
         String city_data = readJsonFile("city.json");
 
         Gson gson = new Gson();
-
+/*
         options1Items = gson.fromJson(province_data, new TypeToken<ArrayList<ProvinceBean>>(){}.getType());
         ArrayList<CityBean> cityBean_data = gson.fromJson(city_data, new TypeToken<ArrayList<CityBean>>(){}.getType());
         for(ProvinceBean provinceBean:options1Items){
@@ -290,7 +293,7 @@ public class Private_editActivity extends AppCompatActivity implements View.OnCl
                 }
             }
             options2Items.add(temp);
-        }
+        }*/
 
     }
 
@@ -364,6 +367,7 @@ public class Private_editActivity extends AppCompatActivity implements View.OnCl
                 popupWindow.dismiss();
             }
         });
+
         //取消按钮监听
         cancel.setOnClickListener(new View.OnClickListener() {
             @Override

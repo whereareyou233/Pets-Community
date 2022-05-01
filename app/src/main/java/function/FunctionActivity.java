@@ -39,26 +39,7 @@ public class FunctionActivity extends AppCompatActivity {
 
         bottomNavigationView = findViewById(R.id.bottomNavigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
- //       DataSupport.deleteAll("User","");
-//        User user = new User();
-//        user.setName("爱宠");
-//        user.setPortrait((new PhotoUtils()).file2byte(this ,"private_headshot.jpg"));
-//        user.setImageId(R.mipmap.private_headshot);
-//        if (user.save()) {
-//            Toast.makeText(this, "保存成功", Toast.LENGTH_SHORT).show();
-//          //  this.finish();
-//        } else {
-//            Toast.makeText(this, "保存失败", Toast.LENGTH_SHORT).show();
-//        }
-//        user.setName("test");
-//        user.setPortrait((new PhotoUtils()).file2byte(this ,"default_portrait.jpg"));
-//        user.setImageId(R.mipmap.default_portrait);
-//        if (user.save()) {
-//            Toast.makeText(this, "保存成功", Toast.LENGTH_SHORT).show();
-//          //  this.finish();
-//        } else {
-//            Toast.makeText(this, "保存失败", Toast.LENGTH_SHORT).show();
-//        }
+
         viewPager = findViewById(R.id.vp);
         viewPager.setOffscreenPageLimit(3);
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
@@ -111,7 +92,7 @@ public class FunctionActivity extends AppCompatActivity {
                     viewPager.setCurrentItem(2);
                     return true;
                 case R.id.navigation_geren:
-                   // initInfo();
+                    initInfo();
                     viewPager.setCurrentItem(3);
 
                     return true;
@@ -120,24 +101,12 @@ public class FunctionActivity extends AppCompatActivity {
         }
     };
 
-   // private void initInfo() {
+    private void initInfo() {
+        User user = new User();
+        user.setName("爱宠");
+        user.setImageId(R.mipmap.private_headshot);
+        user.save();
+    }
 
 
-
-    //    User user = new User();
-    //    user.setId("柯基");
-
-//        user.setName("123");
-//        user.setPortrait((new PhotoUtils()).file2byte(this ,"private_headshot.jpg"));
-       // user.setImageId(R.mipmap.private_headshot);
-//        if (user.save()) {
-//            Toast.makeText(this, "保存成功", Toast.LENGTH_SHORT).show();
-//          //  this.finish();
-//        } else {
-//            Toast.makeText(this, "保存失败", Toast.LENGTH_SHORT).show();
-//        }
-
-      //  DataSupport.deleteAll("User","");
-
-  //  }
 }

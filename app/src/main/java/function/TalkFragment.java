@@ -23,14 +23,10 @@ public class TalkFragment extends Fragment {
     private TalkAdapter adapter;
 
     private Talk[] talks = {
-            new Talk("抓住今日份可爱1,今天去了最喜欢的楼下", "金毛查理的日常",
-                    R.drawable.jinmao, "4546", R.mipmap.jinmaohead, R.drawable.jinmao, R.drawable.jinmao),
-            new Talk("抓住今日份可爱1,今天去了最喜欢的楼下", "金毛查理的日常",
-                    R.drawable.jinmao, "4546", R.mipmap.jinmaohead, R.drawable.jinmao, R.drawable.jinmao),
-            new Talk("抓住今日份可爱1,今天去了最喜欢的楼下", "金毛查理的日常",
-                    R.drawable.jinmao, "4546", R.mipmap.jinmaohead, R.drawable.jinmao, R.drawable.jinmao),
-            new Talk("抓住今日份可爱1,今天去了最喜欢的楼下", "金毛查理的日常",
-                    R.drawable.jinmao, "4546", R.mipmap.jinmaohead, R.drawable.jinmao, R.drawable.jinmao)
+            new Talk("和金金在一起的时光总是特别短暂，但是非常的欢乐，马上就要假期了，它也很期待和我一起去郊游呢~", "COCO妈妈",
+                    R.mipmap.talk_item_1_1, "4546", R.mipmap.jinmaohead, R.mipmap.talk_item_1_2, R.mipmap.talk_item_1_3),
+            new Talk("新手养狗日记|今天闹米也超级乖~决定和爸爸带闹米出去好好玩一玩！", "闹米是只犬喵",
+                    R.mipmap.talk_item_1_4, "4546", R.mipmap.jinmaohead, R.mipmap.talk_item_1_5, R.mipmap.talk_item_1_6)
 
     };
     private View view;

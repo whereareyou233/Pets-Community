@@ -18,8 +18,6 @@ import java.util.List;
 
 public class Private_businessActivity extends AppCompatActivity {
 
-   // private List<Fragment> fragmentList;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

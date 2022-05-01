@@ -38,7 +38,6 @@ public class Private_serviceActivity extends AppCompatActivity {
             @Override
             public void onPageSelected(int position) {
             }
-
             @Override
             public void onPageScrollStateChanged(int state) {
             }
@@ -53,9 +52,7 @@ public class Private_serviceActivity extends AppCompatActivity {
             actionBar.setDisplayHomeAsUpEnabled(true);
             actionBar.setDisplayShowTitleEnabled(false);
         }
-
     }
-
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         super.onOptionsItemSelected(item);

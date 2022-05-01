@@ -30,23 +30,6 @@ public class Order_fg2 extends Fragment {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment Business_fg2.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static Order_fg2 newInstance(String param1, String param2) {
-        Order_fg2 fragment = new Order_fg2();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

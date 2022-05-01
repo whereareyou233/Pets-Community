@@ -36,7 +36,7 @@
             android:textSize="18sp" />
 
         <Button
-            android:layout_width="60sp"
+            android:layout_width="80sp"
             android:layout_height="30dp"
             android:layout_alignParentRight="true"
             android:layout_marginStart="10dp"

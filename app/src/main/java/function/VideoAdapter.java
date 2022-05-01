@@ -73,7 +73,6 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.ViewHolder> 
         video video = mVideo.get(position);
         holder.videoID.setText(video.getID());
         holder.videoText.setText(video.gettext());
-
         holder.videoNum.setText(video.getNum());
         Glide.with(mContent).load(video.getImageId()).into(holder.videoImage);
         Glide.with(mContent).load(video.getImageHead()).into(holder.videoImageHead);
