@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/tab_checked</item>
 
 
     </style>
@@ -34,6 +34,9 @@
         <item name="android:textSize">15sp</item>
         <item name="android:textColor">#666666</item>
         <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="PetsActivityTheme" parent="AppTheme">
     </style>
 
 

@@ -61,6 +61,7 @@
         <entry key="..\:/Users/HP/Desktop/Pets-Community/app/src/main/res/drawable/bottom_navigation_selector.xml" value="0.1640625" />
         <entry key="..\:/Users/HP/Desktop/Pets-Community/app/src/main/res/drawable/but_style1_shape.xml" value="0.1640625" />
         <entry key="..\:/Users/HP/Desktop/Pets-Community/app/src/main/res/drawable/ic_baseline_more_horiz_24.xml" value="0.1640625" />
+        <entry key="..\:/Users/HP/Desktop/Pets-Community/app/src/main/res/drawable/ic_comment.xml" value="0.262037037037037" />
         <entry key="..\:/Users/HP/Desktop/Pets-Community/app/src/main/res/drawable/ic_launcher_background.xml" value="0.14583333333333334" />
         <entry key="..\:/Users/HP/Desktop/Pets-Community/app/src/main/res/drawable/more_24.xml" value="0.1640625" />
         <entry key="..\:/Users/HP/Desktop/Pets-Community/app/src/main/res/drawable/point_deep.xml" value="0.1640625" />
@@ -72,11 +73,19 @@
         <entry key="..\:/Users/HP/Desktop/Pets-Community/app/src/main/res/layout/activity_animal.xml" value="0.14221014492753623" />
         <entry key="..\:/Users/HP/Desktop/Pets-Community/app/src/main/res/layout/activity_function.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/HP/Desktop/Pets-Community/app/src/main/res/layout/activity_guide.xml" value="0.1296875" />
-        <entry key="..\:/Users/HP/Desktop/Pets-Community/app/src/main/res/layout/activity_main.xml" value="0.1296875" />
+
+        <entry key="..\:/Users/HP/Desktop/Pets-Community/app/src/main/res/layout/activity_knowledge_item1.xml" value="0.22146739130434784" />
+        <entry key="..\:/Users/HP/Desktop/Pets-Community/app/src/main/res/layout/activity_main.xml" value="0.152" />
+        <entry key="..\:/Users/HP/Desktop/Pets-Community/app/src/main/res/layout/activity_private_business.xml" value="0.2" />
+        <entry key="..\:/Users/HP/Desktop/Pets-Community/app/src/main/res/layout/activity_private_edit.xml" value="0.264" />
+        <entry key="..\:/Users/HP/Desktop/Pets-Community/app/src/main/res/layout/activity_private_service.xml" value="0.1578125" />
         <entry key="..\:/Users/HP/Desktop/Pets-Community/app/src/main/res/layout/activity_setting.xml" value="0.19427083333333334" />
         <entry key="..\:/Users/HP/Desktop/Pets-Community/app/src/main/res/layout/fragment_knowledge.xml" value="0.2" />
         <entry key="..\:/Users/HP/Desktop/Pets-Community/app/src/main/res/layout/fragment_private.xml" value="0.264" />
         <entry key="..\:/Users/HP/Desktop/Pets-Community/app/src/main/res/layout/fragment_shouye.xml" value="0.1296875" />
+
+        <entry key="..\:/Users/HP/Desktop/Pets-Community/app/src/main/res/layout/fragment_shuju.xml" value="0.12335359675785208" />
+        <entry key="..\:/Users/HP/Desktop/Pets-Community/app/src/main/res/layout/item_group_layout.xml" value="0.264" />
         <entry key="..\:/Users/HP/Desktop/Pets-Community/app/src/main/res/layout/knowledge_item.xml" value="0.2" />
         <entry key="..\:/Users/HP/Desktop/Pets-Community/app/src/main/res/layout/private_item.xml" value="0.1716485507246377" />
         <entry key="..\:/Users/HP/Desktop/Pets-Community/app/src/main/res/layout/setting_item.xml" value="0.19427083333333334" />
