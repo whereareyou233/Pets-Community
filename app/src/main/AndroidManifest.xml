@@ -15,13 +15,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Pats_community">
+        <activity
+            android:name="function.util.Knowledge_itemActivity"
+            android:theme="@style/PetsActivityTheme"
+            android:exported="false" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="com.Pats_community.fileprovider"
             android:exported="false"
-            android:grantUriPermissions="true"
-            >
+            android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
@@ -40,22 +43,17 @@
             android:name="function.Private_businessActivity"
             android:exported="false" />
         <activity
-
             android:name="function.util.AlarmActivity"
             android:exported="false" />
         <activity
             android:name="function.util.ConvenientServiceActivity"
             android:exported="false" />
-
+        <activity
             android:name="function.SettingActivity"
             android:exported="false" />
         <activity
             android:name="function.AnimalActivity"
-            android:exported="true">
-
-         
-        </activity>
-
+            android:exported="true"></activity>
         <activity
             android:name="function.util.FitControlActivity"
             android:exported="false" />
@@ -74,15 +72,14 @@
             android:exported="true" />
         <activity
             android:name=".GuideActivity"
-            android:icon="@mipmap/mainlogo"
-            android:exported="true">
+            android:exported="true"
+            android:icon="@mipmap/mainlogo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MainActivity"
             android:exported="true">
